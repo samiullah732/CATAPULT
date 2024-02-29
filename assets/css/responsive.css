@@ -1,0 +1,581 @@
+@media screen and (max-width: 1400px) {
+    section.hero-section .swiper-content {
+        padding: 60px 0 110px;
+    }
+    .swiper-content h1 {
+        font-size: 54px;
+    }
+    .swiper-action-btns .button {
+        width: 52px;
+        height: 52px;
+    }
+    .swiper-action-btns .button svg {
+        width: 22px;
+    }
+    section.start-advertising {
+        padding: 75PX 0 95PX;
+    }
+    .sec-title {
+        font-size: 32px;
+    }
+    section.start-advertising .card h6 {
+        font-size: 18px;
+
+    }
+    section.start-advertising .card svg{
+        width: 50px;
+    }
+    section.start-advertising .card {
+        padding: 30px 25px 35px;
+    }
+    section.for-publisher-section .card {
+        padding: 50px 70px 40px 55px;
+    }
+    section.for-publisher-section .card img {
+        width: 245px;
+        margin-right: -45px;
+    }
+    section.for-publisher-section .advertisers-card.card img {
+        width: 186px;
+    }
+    section.for-publisher-section .wrap {
+        padding: 15px 0 0;
+    }
+    section.marketplace-section .card-column {
+        width: 25%;
+    }
+    section.marketplace-section  .select2-container {
+        max-width: 120px !important;
+    }
+    section.we-serve {
+        padding: 100px 0 110px;
+    }
+    section.hero-section .swiper-content p {
+        font-size: 18px;
+    }
+    section.campaign-section .steps ul li.current span.title {
+        font-size: 18px;
+    }
+    .wizard > .steps .number {
+        width: 46px;
+        height: 46px;
+        line-height: 42px;
+        font-size: 18px;
+    }
+    .wizard > .steps > ul > li:before, .wizard > .steps > ul > li:after {
+        height: 8px;
+    }
+    section.campaign-section .section-inner {
+        padding: 30px 60px 50px;
+    }
+    .wizard fieldset {
+        padding: 15px 0 80px;
+    }
+    section.campaign-section fieldset ul li {
+        width: 25%;
+    }
+    section.campaign-section fieldset label.label-input {
+        font-size: 20px;
+
+    }
+}
+@media screen and (max-width: 1199px) {
+    section.hero-section .swiper-content {
+        padding: 50px 0 80px;
+    }
+    .swiper-content h1 {
+        font-size: 46px;
+    }
+    section.for-publisher-section .card {
+        margin-bottom: 15px;
+    }
+    section.start-advertising {
+        padding: 65PX 0 85PX;
+    }
+    .sec-title {
+        font-size: 28px;
+    }
+    section.marketplace-section {
+        padding: 65px 0;
+    }
+    .filters-row.d-flex.justify-content-between {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    section.marketplace-section .card-column {
+        width: 33.333%;
+    }
+    section.marketplace-section h2 {
+        margin-bottom: 45px;
+    }
+    section.marketplace-section .fs-20px {
+        font-size: 19px;
+    }
+    section.marketplace-section .fs-18px {
+        font-size: 17px;
+    }
+    section.marketplace-section .card .price {
+        font-size: 22px;
+    }
+    section.get-register .footer-card img {
+        max-width: 135px;
+        margin-top: -40px;
+    }
+    section.we-serve {
+        padding: 80px 0 95px;
+    }
+    section.we-serve .wrapper {
+        padding: 85px 0 60px;
+    }
+    section.hero-section.campaign-banner {
+        padding: 0 0 35px;
+    }
+    section.campaign-section fieldset ul li .card-inner {
+       
+        padding: 30px 15px;
+    
+    }
+    section.campaign-section fieldset ul li .numbers {
+        font-size: 20px;
+    }
+    section.campaign-section fieldset ul li .title {
+        font-size: 16px;
+    }
+    .filters-row .accordion-item:last-child {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 992px) {
+    .sec-title {
+        font-size: 26px;
+    }
+    section.hero-section {
+        background-position: left;
+    }
+    .swiper-content h1 br{
+        display: none;
+    }
+    section.start-advertising .card {
+        margin-bottom: 15px;
+        height: auto;
+        padding: 25px 25px 35px;
+    }
+    section.start-advertising {
+        padding: 65PX 0 65PX;
+    }
+    section.for-publisher-section .card {
+        padding: 42px 65px 35px 47px;
+    }
+    section.marketplace-section {
+        padding: 50px 0;
+    }
+    section.marketplace-section .filters-row.d-flex .d-flex.gap-4 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section.marketplace-section .card-column {
+        width: 50%;
+    }
+    section.our-servces {
+        overflow: hidden;
+        padding: 24px 0 24px;
+    }
+    footer {
+        padding-top: 75px;
+    }
+    footer .footer-title {
+        font-size: 18px !important;
+        margin-bottom: 20px;
+    }
+    footer .fs-16px {
+        font-size: 14px;
+    }
+    footer .fs-18px {
+        font-size: 16px;
+    }
+    .social-linkls.mt-3 {
+        margin-bottom: 25px;
+    }
+    .social-linkls svg {
+        width: 42px;
+    }
+    footer .footer-top {
+        padding-bottom: 40px;
+    }
+    header .navbar .ms-5 {
+        margin-left: 0 !important;
+    }
+    header .navbar .gap-4 {
+        gap: 0 !important;
+    }
+    header .navbar  .align-items-center {
+        margin-left: 0 !important;
+        align-items:start !important;
+    }
+    .get-started {
+        width: auto;
+        height: 54px;
+        background-color: transparent;
+    }
+    section.campaign-section .container{
+        max-width: 100% !important;
+        padding: 0 20px !important
+    }
+    section.campaign-section{
+        padding: 0 0 80px;
+    }
+    section.campaign-section .section-inner {
+        padding: 15px 60px 20px;
+        top: -85px;
+    }
+    section.campaign-section .steps ul li.current span.title {
+        font-size: 17px;
+        margin-top: 15px;
+    }
+    .wizard > .steps .number {
+        width: 42px;
+        height: 42px;
+        line-height: 38px;
+        font-size: 17px;
+    }
+    .wizard > .steps > ul > li:before, .wizard > .steps > ul > li:after {
+        height: 8px;
+        top: 59px;
+    }
+    .wizard fieldset {
+        padding: 0 0 50px;
+    }
+    section.campaign-section fieldset ul li .numbers {
+        font-size: 18px;
+    }
+    section.campaign-section fieldset ul li .title {
+        
+        margin-top: 15px;
+
+    }
+    section.campaign-section fieldset .date-icon {
+        display: none;
+    }
+    section.campaign-section fieldset label.label-input {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    .wizard > .steps > ul > li:after {
+        left: 32%;
+        width: 35%;
+    }
+    .get-started:hover{
+        color: #15D85E !important;
+    }
+    span.navbar-toggler-icon svg {
+        width: 25px;
+        display: block;
+        margin-left: auto;
+    }
+    .filters-row.d-flex.justify-content-between {
+        flex-wrap: wrap;
+        gap: 15px;
+        display: flex;
+        justify-content: flex-start !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    .swiper-content h1 {
+        font-size: 36px;
+    }
+    .swiper-content input.form-control {
+        height: 52px;
+    
+    }
+    .swiper-content .input-group button.search {
+        padding: 6.5px 11px;
+    }
+    section.hero-section .swiper-content {
+        padding: 40px 0 60px;
+    }
+    section.start-advertising {
+        padding: 50PX 0 55PX;
+    }
+    .sec-title {
+        font-size: 24px;
+    }
+    section.start-advertising .card h6 {
+
+        margin: 20px 0 10px;
+    }
+    section.for-publisher-section .card p {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+    section.for-publisher-section .card  .footer-card {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    section.for-publisher-section .card img {
+        width: 200px;
+        margin: 0;
+    }
+    section.for-publisher-section .advertisers-card.card img {
+        width: 170px;
+    }
+    section.marketplace-section .row.mt-5.mb-2 {
+        margin-top: 20px !important;
+    }
+    section.marketplace-section .text-end{
+        text-align: left !important;;
+    }
+    section.marketplace-section .card-column {
+        width: 100%;
+    }
+    section.get-register .footer-card {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    section.get-register .footer-card img {
+        max-width: 135px;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+    section.get-register .get-register-card p br {
+       display: none;
+    }
+    section.get-register {
+        padding-bottom: 60px;
+    }
+    section.we-serve {
+        padding: 60px 0 70px;
+    }
+    section.we-serve .wrapper {
+        padding: 60px 0 40px;
+    }
+    section.we-serve ul {
+        margin: 25px 0 0;
+    }
+    footer .footer-top {
+        padding-bottom: 30px;
+    }
+    footer .text-end{
+        text-align: left !important;
+        margin-top: 10px;
+    }
+    section.start-advertising .row.mt-5 {
+        margin-top: 30px !important;
+    }
+    section.payment-method img.img-fluid {
+        margin-bottom: 15px;
+    }
+    section.payment-method   .col-4.col-sm-3.col-md-2 {
+        padding: 0 7.5px;
+    }
+    ul.marquee-with-options li {
+        font-size: 15px;
+        
+    }
+    section.our-servces ul li{
+        margin: 0 15px
+    }
+    section.our-servces ul li svg {
+        width: 22px;
+    }
+    section.we-serve li .flex {
+
+        gap: 8px;
+    }
+    section.we-serve ul li {
+    
+        margin: 0 15px;
+    }
+    section.we-serve li .flex svg {
+
+        width: 25px;
+    }
+    section.hero-section .swiper-content p{
+        font-size: 16px;
+    }
+    section.campaign-section .section-inner {
+        padding: 15px 40px 20px;
+        top: -80px;
+    }
+    section.campaign-section fieldset ul li .card-inner {
+        padding: 20px 15px;
+    }
+    section.campaign-section fieldset ul li .numbers {
+        font-size: 16px;
+    }
+    section.campaign-section .steps ul li.current span.title {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .wizard fieldset {
+        padding: 0 0 30px;
+    }
+    section.campaign-section {
+        padding: 0 0 0;
+    }
+    .wizard > .actions > ul > li > a {
+        font-size: 13px;
+    }
+    .wizard > .steps > ul > li a {
+        margin-bottom: 25px;
+    }
+    section.campaign-section fieldset ul li {
+        width: 33.33%;
+    }
+}
+@media screen and (max-width: 575px) {
+    .swiper-content h1 {
+        font-size: 32px;
+    }
+    .swiper-content p {
+        font-size: 14px;
+    }
+    section.hero-section {
+        background-position: center;
+    }
+    section.hero-section .browse-market {
+        height: 47px;
+        font-size: 15px;
+        width: 175px;
+    }
+    .sec-title {
+        font-size: 22px;
+    }
+    section.start-advertising .card svg {
+        width: 40px;
+    }
+    section.start-advertising .card {
+        padding: 20px 25px 25px;
+    }
+    section.for-publisher-section .card {
+        padding: 35px 40px 30px 30px;
+    }
+    section.for-publisher-section .card img {
+        width: 160px;
+        margin: 20px 0;
+        height: auto;
+    }
+    section.for-publisher-section .advertisers-card.card img {
+        width: 140px;
+    }
+    section.payment-method .col-sm-2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    section.campaign-section fieldset ul li {
+        width: 50%;
+    }
+    .wizard > .steps .number {
+        width: 34px;
+        height: 34px;
+        line-height: 31px;
+        font-size: 14px;
+    }
+    .wizard > .steps > ul > li:before, .wizard > .steps > ul > li:after {
+        height: 6px;
+        top: 55px;
+    }
+    .wizard > .steps > ul > li:after {
+        left: 36%;
+        width: 33%;
+    }
+    section.campaign-section .steps ul li.current span.title {
+        font-size: 14px;
+        margin-top: 0;
+    }
+    section.campaign-section .select2-container {
+        height: 40px;
+        margin-bottom: 29px;
+    }
+    section.campaign-section .select2-container--default .select2-selection--single {
+       
+        height: 44px;
+        padding: 7px 10px;
+        
+    }
+    section.campaign-section .select2-container--default .select2-selection--single .select2-selection__arrow b {
+        top: 52%;
+    }
+}
+@media screen and (max-width: 420px) {
+    section.campaign-section .section-inner {
+        padding: 0 20px 20px;
+        top: -58px;
+    }
+    .wizard > .steps > ul > li {
+        min-width: 22.9% !important;
+    }
+    .swiper-content h1 {
+        font-size: 26px;
+    }
+    section.hero-section .swiper-content p {
+        font-size: 14px;
+    }
+    section.hero-section.campaign-banner {
+        padding: 0 0 0;
+    }
+    .wizard > .steps .number {
+        width: 28px;
+        height: 28px;
+        line-height: 24px;
+        font-size: 12px;
+    }
+    .wizard > .steps > ul > li:after {
+        left: 36%;
+        width: 50%;
+        z-index: 1;
+    }
+    .wizard > .steps > ul > li:before, .wizard > .steps > ul > li:after {
+        height: 6px;
+        top: 52px;
+    }
+    .wizard > .actions {
+        padding: 35px 0 15px;
+    }
+    section.campaign-section fieldset ul li .numbers {
+        font-size: 15px;
+    }
+    section.campaign-section fieldset ul li .title {
+        font-size: 15px;
+        line-height: 18px;
+        margin-top: 10px;
+    }
+    section.campaign-section fieldset  .col-sm-6.position-relative {
+        margin-bottom: 15px;
+    }
+    section.campaign-section fieldset label.label-input {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    section.campaign-section fieldset label.form-check-label {
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .wizard > .actions > ul {
+        flex-wrap: wrap;
+    }
+    .wizard > .actions > ul > li > a.btn-left.cart-checkout {
+        width: 100%;
+        position: unset;
+        margin-top: 10px;
+    }
+    li.last.current span.title {
+        position: relative;
+        width: 100%;
+        text-align: right;
+        margin-right: 0;
+    }
+    section.campaign-section .steps ul li.current span.title {
+        display: none;
+    }
+    section.campaign-section  h6.title.current {
+        display: block !important;
+        left: 0 !important;
+        top: -27px;
+    }
+    .wizard > .steps > ul > li:before {
+        right: 98%;
+        width: 31%;
+    }
+}

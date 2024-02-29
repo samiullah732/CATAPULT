@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="title" content="catapult ads" />
+    <meta property="og:description" content="catapult ads" />
+    <meta name="description" content="catapult ads" />
+    <meta name="keywords" content="catapult ads">
+    <title>catapult ads</title>
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+     <link href="assets/css/wizard.css" rel="stylesheet" type="text/css"  media="all">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.css" integrity="sha512-wJgJNTBBkLit7ymC6vvzM1EcSWeM9mmOu+1USHaRBbHkm6W9EgM0HY27+UtUaprntaYQJF75rc8gjxllKs5OIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"  media="all">
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css"  media="all">
+  </head>
+  <body>
+    <header class="header-sticky " id="header-sticky">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand text-dark-c" href="#"><img src="assets/images/logo.png" class="img-fluid"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 me-3 mb-lg-0 gap-4">
+                  <li class="nav-item ">
+                    <a class="nav-link text-dark-c active" aria-current="page" href="#">Ad Marketplace </a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link text-dark-c" href="#">Campaign Builder</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link text-dark-c " href="#" tabindex="-1">Ad Bundle</a>
+                  </li>
+                </ul>
+                <div class="ms-5">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4 align-items-center">
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link text-dark-c ">Login</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link get-started text-dark-c hover-color-white">Get Started</a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main id="main" class="main" role="main">
+        <section class="hero-section bg-dark campaign-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="swiper-content text-center">
+                            <h1 class="text-primary-green">Self-serve<br> Campaign Builder</h1>
+                            <p>Launch Your Ad Campaign On Multiple Websites In One Go</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </section>
+        <section class="campaign-section">
+            <div class="container">
+                <div class="section-inner">
+                    <form id="campaign-form" action="#" class="tab-wizard wizard-circle wizard clearfix">
+                        <h6 class="d-none"><span class="title">Select Display Ad Size</span></h6>
+                        <fieldset>
+                            <div class="alert alert-danger alert-dismissible fade " role="alert" id="error_AdSize">
+                                Select an Ad Size.
+                                <button type="button" class="close-btn" data-bs-dismiss="alert" aria-label="Close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                                </button>
+                              </div>
+                            <ul class="">
+                                <li>
+                                    <label class="radio-card" for="billboard">
+                                        <input type="radio" name="AdSize" value="Billboard" class="d-none" id="billboard">
+                                        <div class="card-inner">
+                                            <div class="numbers">
+                                                970x250
+                                            </div>
+                                            <span class="title"> Billboard</span>
+                                        </div>
+                                        </label>
+                                </li>
+                                <li>
+                                    <label class="radio-card" for="largeLeaderboard">
+                                        <input type="radio" name="AdSize" value="LargeLeaderboard" class="d-none" id="largeLeaderboard">
+                                        <div class="card-inner">
+                                            <div class="numbers">
+                                                970x90
+                                            </div>                                                  
+                                            <span class="title">Large Leaderboard</span>
+                                        </div>
+                                        </label>
+                                </li>
+                                <li>
+                                    <label class="radio-card" for="Leaderboard">
+                                        <input type="radio" name="AdSize" value="Leaderboard" class="d-none" id="Leaderboard">
+                                        <div class="card-inner">
+                                            <div class="numbers">
+                                                728x90
+                                            </div>                                                 
+                                            <span class="title">Leaderboard</span>
+                                        </div>
+                                        </label>
+                                </li>
+                                <li>
+                                    <label class="radio-card" for="fullBanner">
+                                        <input type="radio" name="AdSize" value="fullBanner" class="d-none" id="fullBanner">
+                                        <div class="card-inner">
+                                            <div class="numbers">
+                                                468x60
+                                            </div>                                                   
+                                            <span class="title">Full Banner</span>
+                                        </div>
+                                        </label>
+                                </li>
+                                <li>
+                                    <label class="radio-card" for="LargeRectangle">
+                                        <input type="radio" name="AdSize" value="LargeRectangle" class="d-none" id="LargeRectangle">
+                                        <div class="card-inner">
+                                            <div class="numbers">
+                                                336x280
+                                            </div>                                                        
+                                            <span class="title">Large Rectangle</span>
+                                        </div>
+                                        </label>
+                                </li>
+                                <li>
+                                    <label class="radio-card" for="Square">
+                                        <input type="radio" name="AdSize" value="Square" class="d-none" id="Square">
+                                        <div class="card-inner">
+                                            <div class="numbers">
+                                                320x320
+                                            </div>                                                 
+                                            <span class="title">Square</span>
+                                        </div>
+                                        </label>
+                                </li>
+                                <li>
+                                    <label class="radio-card" for="MobileLeaderboard">
+                                        <input type="radio" name="AdSize" value="MobileLeaderboard" class="d-none" id="MobileLeaderboard">
+                                        <div class="card-inner">
+                                            <div class="numbers">
+                                                320x50
+                                            </div> 
+                                            <span class="title">Mobile Leaderboard</span>
+                                        </div>
+                                        </label>
+                                </li>
+                                <li>
+                                    <label class="radio-card" for="LargeMobileBanner">
+                                        <input type="radio" name="AdSize" value="LargeMobileBanner" class="d-none" id="LargeMobileBanner">
+                                        <div class="card-inner">
+                                            <div class="numbers">
+                                                318x106
+                                            </div>                                              
+                                            <span class="title">Large Mobile Banner</span>
+                                        </div>
+                                        </label>
+                                </li>
+                                <li>
+                                    <label class="radio-card" for="Skyscraper">
+                                        <input type="radio" name="AdSize" value="Skyscraper" class="d-none" id="Skyscraper">
+                                        <div class="card-inner">
+                                            <div class="numbers">
+                                                120x600
+                                            </div>                                                 
+                                            <span class="title">Skyscraper</span>
+                                        </div>
+                                        </label>
+                                </li>
+                                <li>
+                                    <label class="radio-card" for="HalfPage">
+                                        <input type="radio" name="AdSize" value="HalfPage" class="d-none" id="HalfPage">
+                                        <div class="card-inner">
+                                            <div class="numbers">
+                                                300x600
+                                            </div>                                               
+                                            <span class="title">Half Page</span>
+                                        </div>
+                                        </label>
+                                </li>
+                                <li>
+                                    <label class="radio-card" for="MediumRectangle">
+                                        <input type="radio" name="AdSize" value="MediumRectangle" class="d-none" id="MediumRectangle">
+                                        <div class="card-inner">
+                                            <div class="numbers">
+                                                300x250
+                                            </div>                                                                                                    
+                                            <span class="title">Medium Rectangle</span>
+                                        </div>
+                                        </label>
+                                </li>
+                                <li>
+                                    <label class="radio-card" for="Skyscraper">
+                                        <input type="radio" name="AdSize" value="Skyscraper" class="d-none" id="Skyscraper">
+                                        <div class="card-inner">
+                                            <div class="numbers">
+                                                250x250
+                                            </div>                                                                                                    
+                                            <span class="title">Square</span>
+                                        </div>
+                                        </label>
+                                </li>
+                                <li>
+                                    <label class="radio-card" for="WideSkyscraper">
+                                        <input type="radio" name="AdSize" value="WideSkyscraper" class="d-none" id="WideSkyscraper">
+                                        <div class="card-inner">
+                                            <div class="numbers">
+                                                160x600
+                                            </div>                                                                                                   
+                                            <span class="title">Wide Skyscraper</span>
+                                        </div>
+                                        </label>
+                                </li>
+                            </ul>
+                            
+                        </fieldset>  
+                        <h6><span class="title">Select Display Ad Location</span></h6>  
+                        <fieldset>
+                            <div class="alert alert-danger alert-dismissible fade " role="alert" id="error_AdLocation">
+                                Select an Ad Location.
+                                <button type="button" class="close-btn" data-bs-dismiss="alert" aria-label="Close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                                </button>
+                              </div>
+                            <ul class="">
+                                <li>
+                                    <label class="radio-card" for="Header">
+                                        <input type="radio" name="AdLocation" value="Header" class="d-none" id="Header">
+                                        <div class="card-inner">
+                                            <img src="assets/images/Ad-Header.svg" alt="Header" class="img-fluid">
+                                            <span class="title"> Header</span>
+                                        </div>
+                                        </label>
+                                </li>
+                                <li>
+                                    <label class="radio-card" for="Middle">
+                                        <input type="radio" name="AdLocation" value="Middle" class="d-none" id="Middle">
+                                        <div class="card-inner">
+                                            <img src="assets/images/Ad-Middle.svg" alt="Middle" class="img-fluid">                                             
+                                            <span class="title"> Middle</span>
+                                        </div>
+                                        </label>
+                                </li>
+                                <li>
+                                    <label class="radio-card" for="Leftsidebar">
+                                        <input type="radio" name="AdLocation" value="Leftsidebar" class="d-none" id="Leftsidebar">
+                                        <div class="card-inner">
+                                            <img src="assets/images/Ad-leftSidebar.svg" alt="Sidebar" class="img-fluid">
+                                            <span class="title"> Left Sidebar</span>
+                                        </div>
+                                        </label>
+                                </li>
+                                <li>
+                                    <label class="radio-card" for="RightSidebar">
+                                        <input type="radio" name="AdLocation" value="RightSidebar" class="d-none" id="RightSidebar">
+                                        <div class="card-inner">
+                                            <img src="assets/images/Ad-Rightsidebar.svg" alt="Sidebar" class="img-fluid">
+                                            <span class="title"> Right Sidebar</span>
+                                        </div>
+                                        </label>
+                                </li>
+                                <li>
+                                    <label class="radio-card" for="Footer">
+                                        <input type="radio" name="AdLocation" value="Footer" class="d-none" id="Footer">
+                                        <div class="card-inner">
+                                            <img src="assets/images/Ad-Footer.svg" alt="Footer" class="img-fluid">
+                                            <span class="title"> Footer</span>
+                                        </div>
+                                        </label>
+                                </li>
+                            </ul>
+                        </fieldset>    
+                        <h6 class="d-none"><span class="title">Select Category</span></h6>
+                        <fieldset>
+                            <div class="alert alert-danger alert-dismissible fade " role="alert" id="error_Category">
+                                Select a Category.
+                                <button type="button" class="close-btn" data-bs-dismiss="alert" aria-label="Close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                                </button>
+                              </div>
+                            <ul class="">
+                                <li>
+                                    <label class="radio-card" for="Music">
+                                        <input type="radio" name="AdCategory" value="Music" class="d-none" id="Music">
+                                        <div class="card-inner">
+                                            <img src="assets/images/Music.svg" alt="Header" class="img-fluid">
+                                            <span class="title"> Music</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio-card" for="Entertainment">
+                                        <input type="radio" name="AdCategory" value="Entertainment" class="d-none" id="Entertainment">
+                                        <div class="card-inner">
+                                            <img src="assets/images/Entertainment.svg" alt="Middle" class="img-fluid">                                             
+                                            <span class="title"> Entertainment</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio-card" for="Technology">
+                                        <input type="radio" name="AdCategory" value="Technology" class="d-none" id="Technology">
+                                        <div class="card-inner">
+                                            <img src="assets/images/Technology.svg" alt="Sidebar" class="img-fluid">
+                                            <span class="title"> Technology</span>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>    
+                        <h6 class="d-none"><span class="title">Select Campaign Duration</span></h6>
+                        <fieldset>
+                            <div class="alert alert-danger alert-dismissible fade " role="alert" id="error_Duration">
+                                Select  Start Date amd  End Date.
+                                <button type="button" class="close-btn" data-bs-dismiss="alert" aria-label="Close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                                </button>
+                              </div>
+                           <div class="row">
+                                <div class="col-sm-6 position-relative">
+                                    <label class="label-input" for="startDate">Start Date:</label>
+                                    <input type="text" class="date-input" id="startDate" placeholder="Select StartDate">
+                                    <div class="date-icon">
+                                        <svg width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_554_8890)">
+                                            <path d="M22.1958 2.48983C22.1958 2.01283 22.2062 1.64062 22.1923 1.26841C22.1644 0.516767 21.6592 -0.00721452 20.9832 1.2809e-05C20.3177 0.00724014 19.8195 0.542063 19.7986 1.29371C19.7881 1.66591 19.7951 2.03451 19.7951 2.44647C16.5895 2.44647 13.4223 2.44647 10.1819 2.44647C10.1819 2.05258 10.1923 1.66591 10.1784 1.27925C10.1575 0.523994 9.6592 1.2809e-05 8.98325 1.2809e-05C8.31425 1.2809e-05 7.81251 0.534835 7.78812 1.28286C7.77419 1.65507 7.78464 2.02728 7.78464 2.48983C7.28638 2.48983 6.816 2.48983 6.34562 2.48983C2.92053 2.49344 0.296833 5.15671 0.220179 8.69449C0.143524 12.2214 0.00763512 15.7448 0.000667572 19.2717C-0.00630188 21.7579 0.11565 24.2477 0.251539 26.7339C0.436207 30.1524 2.89265 32.5628 6.20973 32.7471C11.3282 33.0325 16.4467 33.0795 21.5686 32.8663C22.7428 32.8193 23.9414 32.7904 25.0808 32.523C27.8439 31.8726 29.5791 29.5923 29.7428 26.6544C30.046 21.2628 30.0738 15.8712 29.8648 10.4796C29.823 9.36664 29.7707 8.22833 29.5198 7.15507C28.8683 4.35448 26.5059 2.50428 23.7393 2.49344C23.2446 2.48983 22.7498 2.48983 22.1958 2.48983ZM27.485 12.4816C27.7184 17.2806 27.5895 22.0072 27.3143 26.7267C27.2167 28.4143 26.1087 29.7947 24.6 30.1091C23.6278 30.3114 22.6139 30.3404 21.6174 30.3801C16.4989 30.5789 11.3805 30.568 6.26547 30.2536C4.18882 30.1272 2.71495 28.6889 2.65224 26.5424C2.53028 22.5421 2.47802 18.5417 2.41182 14.5414C2.40136 13.8657 2.47105 13.1863 2.50589 12.4852C10.8439 12.4816 19.1366 12.4816 27.485 12.4816ZM27.3247 9.92675C19.0704 9.92675 10.8578 9.92675 2.65224 9.92675C2.27244 6.342 4.45363 4.49541 7.78464 5.06276C7.78464 5.42413 7.77419 5.79633 7.78812 6.16493C7.80903 6.92018 8.29683 7.45501 8.96234 7.46946C9.64875 7.48392 10.1644 6.93103 10.1819 6.14686C10.1923 5.76381 10.1819 5.38076 10.1819 5.01217C13.4327 5.01217 16.586 5.01217 19.7951 5.01217C19.7951 5.41329 19.7881 5.78188 19.7951 6.15047C19.816 6.93464 20.3282 7.48392 21.0181 7.46585C21.6836 7.45139 22.1714 6.91296 22.1888 6.1577C22.1993 5.77465 22.1923 5.38799 22.1923 5.01578C26.2237 4.54239 27.6627 6.95271 27.3247 9.92675Z" fill="#292B2E"/>
+                                            <path d="M19.1974 18.0575C19.1974 19.0802 19.9953 19.9149 20.9814 19.9258C21.9883 19.9366 22.8106 19.0766 22.7967 18.0286C22.7828 17.0095 21.9674 16.1856 20.9849 16.1929C19.9988 16.2001 19.1974 17.0348 19.1974 18.0575Z" fill="#292B2E"/>
+                                            <path d="M13.1937 18.0359C13.1797 19.0549 13.9741 19.9041 14.9567 19.9258C15.9637 19.9475 16.7964 19.0983 16.793 18.0503C16.7895 17.0276 15.9881 16.1965 15.002 16.1929C14.016 16.1893 13.2041 17.0132 13.1937 18.0359Z" fill="#292B2E"/>
+                                            <path d="M8.98018 19.9258C9.96624 19.9294 10.7746 19.1019 10.7851 18.0828C10.7955 17.0384 9.96973 16.182 8.96276 16.1929C7.9767 16.2073 7.18227 17.0457 7.18575 18.0683C7.18924 19.0874 7.99412 19.9222 8.98018 19.9258Z" fill="#292B2E"/>
+                                            <path d="M21.0059 22.4192C20.0199 22.4156 19.2115 23.2395 19.1976 24.2622C19.1836 25.3065 20.0129 26.1666 21.0199 26.1521C22.0024 26.1413 22.8003 25.2993 22.7969 24.2802C22.7934 23.2576 21.992 22.4264 21.0059 22.4192Z" fill="#292B2E"/>
+                                            <path d="M14.9841 26.1521C15.9701 26.1558 16.7785 25.3282 16.789 24.3092C16.7994 23.2648 15.9736 22.4084 14.9667 22.4192C13.9806 22.4337 13.1862 23.2721 13.1897 24.2947C13.1966 25.3174 14.0015 26.1485 14.9841 26.1521Z" fill="#292B2E"/>
+                                            <path d="M8.99069 22.4192C8.00462 22.4156 7.19626 23.2431 7.18581 24.2658C7.17535 25.3101 8.00462 26.1666 9.01159 26.1521C9.99417 26.1377 10.7921 25.2957 10.7851 24.2766C10.7816 23.254 9.97675 22.4228 8.99069 22.4192Z" fill="#292B2E"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_554_8890">
+                                            <rect width="30" height="33" fill="white" transform="matrix(-1 0 0 1 30 0)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>   
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 position-relative">
+                                    <label class="label-input" for="endDate">End Date:</label>
+                                    <input type="text" class="date-input" id="endDate" placeholder="Select End Date">
+                                    <div class="date-icon">
+                                        <svg width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_554_8890)">
+                                            <path d="M22.1958 2.48983C22.1958 2.01283 22.2062 1.64062 22.1923 1.26841C22.1644 0.516767 21.6592 -0.00721452 20.9832 1.2809e-05C20.3177 0.00724014 19.8195 0.542063 19.7986 1.29371C19.7881 1.66591 19.7951 2.03451 19.7951 2.44647C16.5895 2.44647 13.4223 2.44647 10.1819 2.44647C10.1819 2.05258 10.1923 1.66591 10.1784 1.27925C10.1575 0.523994 9.6592 1.2809e-05 8.98325 1.2809e-05C8.31425 1.2809e-05 7.81251 0.534835 7.78812 1.28286C7.77419 1.65507 7.78464 2.02728 7.78464 2.48983C7.28638 2.48983 6.816 2.48983 6.34562 2.48983C2.92053 2.49344 0.296833 5.15671 0.220179 8.69449C0.143524 12.2214 0.00763512 15.7448 0.000667572 19.2717C-0.00630188 21.7579 0.11565 24.2477 0.251539 26.7339C0.436207 30.1524 2.89265 32.5628 6.20973 32.7471C11.3282 33.0325 16.4467 33.0795 21.5686 32.8663C22.7428 32.8193 23.9414 32.7904 25.0808 32.523C27.8439 31.8726 29.5791 29.5923 29.7428 26.6544C30.046 21.2628 30.0738 15.8712 29.8648 10.4796C29.823 9.36664 29.7707 8.22833 29.5198 7.15507C28.8683 4.35448 26.5059 2.50428 23.7393 2.49344C23.2446 2.48983 22.7498 2.48983 22.1958 2.48983ZM27.485 12.4816C27.7184 17.2806 27.5895 22.0072 27.3143 26.7267C27.2167 28.4143 26.1087 29.7947 24.6 30.1091C23.6278 30.3114 22.6139 30.3404 21.6174 30.3801C16.4989 30.5789 11.3805 30.568 6.26547 30.2536C4.18882 30.1272 2.71495 28.6889 2.65224 26.5424C2.53028 22.5421 2.47802 18.5417 2.41182 14.5414C2.40136 13.8657 2.47105 13.1863 2.50589 12.4852C10.8439 12.4816 19.1366 12.4816 27.485 12.4816ZM27.3247 9.92675C19.0704 9.92675 10.8578 9.92675 2.65224 9.92675C2.27244 6.342 4.45363 4.49541 7.78464 5.06276C7.78464 5.42413 7.77419 5.79633 7.78812 6.16493C7.80903 6.92018 8.29683 7.45501 8.96234 7.46946C9.64875 7.48392 10.1644 6.93103 10.1819 6.14686C10.1923 5.76381 10.1819 5.38076 10.1819 5.01217C13.4327 5.01217 16.586 5.01217 19.7951 5.01217C19.7951 5.41329 19.7881 5.78188 19.7951 6.15047C19.816 6.93464 20.3282 7.48392 21.0181 7.46585C21.6836 7.45139 22.1714 6.91296 22.1888 6.1577C22.1993 5.77465 22.1923 5.38799 22.1923 5.01578C26.2237 4.54239 27.6627 6.95271 27.3247 9.92675Z" fill="#292B2E"/>
+                                            <path d="M19.1974 18.0575C19.1974 19.0802 19.9953 19.9149 20.9814 19.9258C21.9883 19.9366 22.8106 19.0766 22.7967 18.0286C22.7828 17.0095 21.9674 16.1856 20.9849 16.1929C19.9988 16.2001 19.1974 17.0348 19.1974 18.0575Z" fill="#292B2E"/>
+                                            <path d="M13.1937 18.0359C13.1797 19.0549 13.9741 19.9041 14.9567 19.9258C15.9637 19.9475 16.7964 19.0983 16.793 18.0503C16.7895 17.0276 15.9881 16.1965 15.002 16.1929C14.016 16.1893 13.2041 17.0132 13.1937 18.0359Z" fill="#292B2E"/>
+                                            <path d="M8.98018 19.9258C9.96624 19.9294 10.7746 19.1019 10.7851 18.0828C10.7955 17.0384 9.96973 16.182 8.96276 16.1929C7.9767 16.2073 7.18227 17.0457 7.18575 18.0683C7.18924 19.0874 7.99412 19.9222 8.98018 19.9258Z" fill="#292B2E"/>
+                                            <path d="M21.0059 22.4192C20.0199 22.4156 19.2115 23.2395 19.1976 24.2622C19.1836 25.3065 20.0129 26.1666 21.0199 26.1521C22.0024 26.1413 22.8003 25.2993 22.7969 24.2802C22.7934 23.2576 21.992 22.4264 21.0059 22.4192Z" fill="#292B2E"/>
+                                            <path d="M14.9841 26.1521C15.9701 26.1558 16.7785 25.3282 16.789 24.3092C16.7994 23.2648 15.9736 22.4084 14.9667 22.4192C13.9806 22.4337 13.1862 23.2721 13.1897 24.2947C13.1966 25.3174 14.0015 26.1485 14.9841 26.1521Z" fill="#292B2E"/>
+                                            <path d="M8.99069 22.4192C8.00462 22.4156 7.19626 23.2431 7.18581 24.2658C7.17535 25.3101 8.00462 26.1666 9.01159 26.1521C9.99417 26.1377 10.7921 25.2957 10.7851 24.2766C10.7816 23.254 9.97675 22.4228 8.99069 22.4192Z" fill="#292B2E"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_554_8890">
+                                            <rect width="30" height="33" fill="white" transform="matrix(-1 0 0 1 30 0)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>   
+                                    </div>
+                                </div>
+                           </div>
+                        </fieldset>    
+                        <h6 class="d-none"><span class="title">Geo Targeting <small>(Optional)</small></span></h6>
+                        <fieldset>
+                            <label class="label-input" for="Country" >Select a Country</label>
+                            <select class="form-select" idaria-label="Select a Country" id="Country">
+                                <option selected>Select a Country</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="agreeTerms">
+                                <label class="form-check-label" for="agreeTerms">
+                                    I agree the Terms of Service, Privacy and Money Back Guarantee policies.
+                                </label>
+                              </div>
+                        </fieldset>    
+                    
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="get-register">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="get-register-card card">
+                            <h2 class="sec-title">Start Advertising in Minutes</h2>
+                            <p>Whether it's brand awareness or lead generation, take control of<br> your campaign results with a turn-key advertising solution.</p>
+                                <div class="footer-card">
+                                    <a href="#" class="register-btn text-dark-c">Register Free Account</a>
+                                    <img src="assets/images/register-victor.svg" class="img-fluid" alt="Register Victor">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-end">
+                        <div class="advertise-banner">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row footer-top">
+                <div class="col-lg-4">
+                    <h4 class="footer-title">Our ADS Fuel Your Desires!</h4>
+                    <div class="">
+                        <span class="text-primary-green fs-18px d-block mb-2 fw-bold">Easy Integration</span>
+                        <span class="text-dark-c fs-16px fw-regular ">(123) 000-0000</span>
+                    </div>
+                    <div class="mt-2">
+                        <span class="text-primary-green fs-18px d-block mb-2 fw-bold">Send us an email:</span>
+                        <a href="melto:info@catapultads.com" class="text-dark-c fs-16px fw-regular text-decoration-none">info@catapultads.com</a>
+                    </div>
+                    <div class="social-linkls mt-3">
+                        <ul class="d-flex list-unstyled gap-2">
+                            <li>
+                                <a href="#">
+                                    <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M31.8169 48.7247L31.8015 48.7278L31.7864 48.7318C24.1458 50.7475 15.6155 48.5677 9.71156 43.329L9.70207 43.3206L9.69216 43.3126C3.91288 38.6865 0.797315 31.2194 1.2888 23.9147L1.28968 23.9016L1.28987 23.8885C1.45346 12.8385 10.3584 2.84344 21.1775 0.877322C26.6133 0.00127931 32.4075 0.609648 37.2539 3.21851C43.1141 6.3895 47.8134 11.9076 49.559 18.3322C51.4209 25.3313 50.3183 33.2419 46.0156 39.0607C42.4943 43.7285 37.5719 47.5866 31.8169 48.7247Z" fill="white" stroke="#C3C3C3"/>
+                                        <path d="M24.6524 13.5226C26.8278 11.1841 30.3418 11.5182 33.1864 11.9636C33.1864 13.3556 33.1864 14.6919 33.1864 16.0839C31.792 16.1952 30.1187 15.7498 29.0031 16.8077C27.8876 18.1997 28.5011 20.1485 28.3338 21.8188C29.8956 21.8188 31.4573 21.8188 32.9633 21.8188C32.7402 23.4335 32.4613 25.0482 32.2382 26.7186C30.9553 26.7186 29.6167 26.7186 28.3338 26.7186C28.3338 30.6162 28.3338 34.5137 28.3338 38.4113C26.6047 38.4113 24.8198 38.4113 23.0907 38.4113C23.0907 34.5137 23.0907 30.6162 23.0907 26.7186C21.6962 26.7186 20.246 26.7186 18.8516 26.7186C18.8516 25.1039 18.8516 23.4892 18.8516 21.8188C20.3018 21.8188 21.6962 21.8188 23.0907 21.8188C23.2022 19.0349 22.6444 15.8055 24.6524 13.5226Z" fill="#3C5B93"/>
+                                    </svg>
+                                                                             
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="52" height="50" viewBox="0 0 52 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M32.0083 48.7247L31.9929 48.7278L31.9778 48.7318C24.3372 50.7475 15.8069 48.5677 9.90296 43.329L9.89347 43.3206L9.88357 43.3126C4.10428 38.6865 0.988721 31.2194 1.48021 23.9147L1.48108 23.9016L1.48128 23.8885C1.64487 12.8385 10.5498 2.84344 21.3689 0.877322C26.8047 0.00127931 32.5989 0.609648 37.4453 3.21851C43.3055 6.3895 48.0048 11.9076 49.7504 18.3322C51.6123 25.3313 50.5097 33.2419 46.207 39.0607C42.6857 43.7285 37.7633 47.5866 32.0083 48.7247Z" fill="white" stroke="#C3C3C3"/>
+                                        <path d="M13.1914 13.0712C13.3339 13.0712 13.4051 13.0712 13.5475 13.0712C15.7555 13.0712 17.8923 13.0712 20.1002 13.0712C20.3851 13.0712 20.5988 13.2136 20.8125 13.4273C22.5219 15.7062 24.2313 17.9852 25.9407 20.2641C26.2968 20.7626 26.6529 21.1899 27.0091 21.6884C27.1515 21.9021 27.294 21.9021 27.5076 21.6884C29.1458 19.908 30.784 18.1276 32.4222 16.4184C33.4193 15.3501 34.4165 14.2819 35.4136 13.2136C35.4136 13.0712 35.5561 13 35.6985 13C36.2683 13 36.7669 13 37.3367 13C37.4079 13 37.4079 13 37.5504 13.0712C37.4079 13.1424 37.4079 13.2849 37.3367 13.3561C35.1287 15.7774 32.8495 18.1276 30.6415 20.549C29.8581 21.4036 29.1458 22.1869 28.3623 23.0415C28.2199 23.2552 28.2199 23.3264 28.3623 23.5401C29.5732 25.1068 30.784 26.7448 31.9236 28.3116C33.9891 31.089 36.1259 33.8665 38.1914 36.7151C38.2626 36.7863 38.2626 36.8576 38.2626 36.9288C38.2626 37 38.1202 37 38.049 37C35.841 37 33.5618 37 31.3538 37C31.2113 37 30.9977 36.8576 30.9264 36.7151C29.7156 35.1484 28.576 33.5816 27.3652 31.9436C26.368 30.5905 25.2997 29.2374 24.3025 27.8843C24.1601 27.6706 24.0176 27.5994 23.8039 27.8131C22.0233 29.7359 20.2427 31.5875 18.5333 33.5104C17.5361 34.5786 16.4678 35.7181 15.4706 36.7864C15.3282 36.9288 15.1857 37 15.0433 37C14.5447 37 14.1173 37 13.6188 37C13.5475 37 13.4763 36.9288 13.4051 36.9288C13.4763 36.8576 13.4763 36.7863 13.5475 36.7151C14.5447 35.6469 15.5418 34.5786 16.539 33.5104C17.9635 32.0148 19.388 30.4481 20.8125 28.9525C21.5247 28.1691 22.237 27.3858 23.0205 26.6024C23.2341 26.3887 23.2341 26.3175 23.0205 26.1039C21.6672 24.3234 20.3851 22.6142 19.1031 20.8338C17.2512 18.3412 15.3994 15.8487 13.5475 13.3561C13.2626 13.2136 13.2626 13.1424 13.1914 13.0712ZM35.2712 35.2908C35.2 35.2196 35.2 35.1484 35.1287 35.0772C34.1316 33.7953 33.2057 32.4421 32.2085 31.1602C30.2142 28.454 28.2199 25.819 26.1544 23.1128C24.0888 20.3353 22.0233 17.6291 19.9578 14.8516C19.8153 14.638 19.6729 14.5668 19.4592 14.5668C18.5333 14.5668 17.6074 14.5668 16.6814 14.5668C16.6102 14.5668 16.539 14.5668 16.3965 14.638C16.4678 14.7804 16.539 14.8516 16.6102 14.9228C17.4649 16.1335 18.3196 17.3442 19.2455 18.5549C21.4535 21.546 23.6615 24.4659 25.9407 27.457C27.8638 30.0208 29.7156 32.5134 31.6387 35.0772C31.7811 35.2908 31.9236 35.362 32.2085 35.362C33.1344 35.362 34.0604 35.362 34.9863 35.362C35.0575 35.362 35.1287 35.362 35.2712 35.2908Z" fill="black"/>
+                                    </svg>
+                                                                             
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M31.1978 48.7247L31.1824 48.7278L31.1672 48.7318C23.5267 50.7475 14.9964 48.5677 9.09242 43.329L9.08293 43.3206L9.07302 43.3126C3.29374 38.6865 0.178174 31.2194 0.669658 23.9147L0.670537 23.9016L0.670731 23.8885C0.834321 12.8385 9.73925 2.84344 20.5584 0.877322C25.9942 0.00127931 31.7884 0.609648 36.6347 3.21851C42.495 6.3895 47.1943 11.9076 48.9399 18.3322C50.8017 25.3313 49.6991 33.2419 45.3965 39.0607C41.8751 43.7285 36.9528 47.5866 31.1978 48.7247Z" fill="white" stroke="#C3C3C3"/>
+                                        <path d="M17.7665 13.7677C22.1172 13.0439 26.5794 13.2109 30.9301 13.6007C33.8863 13.7677 36.1174 16.5517 36.2847 19.3913C36.5078 23.1775 36.5636 26.908 36.2847 30.6942C36.0616 33.5339 33.8305 36.2621 30.8743 36.5405C27.1372 36.7633 23.4001 36.7633 19.7187 36.5962C16.5952 36.7633 13.5832 34.3134 13.2485 31.1953C12.8581 27.4648 13.0254 23.6786 13.137 19.9481C13.137 17.1642 14.9776 14.3802 17.7665 13.7677ZM17.7665 15.8835C16.0374 16.4403 15.2565 18.2777 15.2007 19.9481C15.0334 23.2889 15.0334 26.6853 15.2007 30.0261C15.2007 31.8078 16.1489 33.8123 18.0454 34.1463C21.8941 34.8145 25.8543 34.6474 29.7587 34.4247C31.4878 34.3691 33.3843 33.5895 33.8863 31.8078C34.6114 28.8568 34.221 25.7944 34.3325 22.7878C34.221 20.7276 34.4998 18.3334 32.9938 16.7187C31.7109 15.3824 29.7029 15.6051 28.0296 15.4381C24.6272 15.4381 21.1689 15.1597 17.7665 15.8835Z" fill="url(#paint0_linear_231_2282)"/>
+                                        <path d="M30.5957 17.4426C32.269 16.8301 33.1057 19.6697 31.3208 20.1152C29.6475 20.5606 28.8108 17.888 30.5957 17.4426Z" fill="url(#paint1_linear_231_2282)"/>
+                                        <path d="M23.287 19.2245C27.805 17.8882 32.1557 22.955 30.315 27.2423C28.8648 31.3069 22.8408 32.4205 20.2192 28.9684C17.2072 25.7946 19.1037 20.004 23.287 19.2245ZM23.2312 21.396C20.3308 22.3425 19.9961 26.7412 22.6177 28.2445C25.0161 29.9149 28.809 27.9661 28.6417 24.9594C28.7532 22.3425 25.6854 20.3381 23.2312 21.396Z" fill="url(#paint2_linear_231_2282)"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_231_2282" x1="24.7387" y1="13.2666" x2="23.501" y2="40.5" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#6863A0"/>
+                                        <stop offset="0.27" stop-color="#BD348C"/>
+                                        <stop offset="0.595" stop-color="#E5514E"/>
+                                        <stop offset="1" stop-color="#F9BC67"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_231_2282" x1="30.9582" y1="17.3564" x2="30.8051" y2="20.6179" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#6863A0"/>
+                                        <stop offset="0.27" stop-color="#BD348C"/>
+                                        <stop offset="0.595" stop-color="#E5514E"/>
+                                        <stop offset="1" stop-color="#F9BC67"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear_231_2282" x1="24.7469" y1="19.0063" x2="24.1112" y2="32.9628" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#6863A0"/>
+                                        <stop offset="0.27" stop-color="#BD348C"/>
+                                        <stop offset="0.595" stop-color="#E5514E"/>
+                                        <stop offset="1" stop-color="#F9BC67"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                                                               
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <h4 class="footer-title">SERVICES</h4>
+                            <ul class="list-unstyled mt-3">
+                               <li class="mb-2" >
+                                    <a href="#" class="text-dark-c fs-16px fw-regular  text-decoration-none hover-color-green"> Ad Marketplace</a>
+                               </li class="mb-2">
+                               <li class="mb-2">
+                                    <a href="#" class="text-dark-c fs-16px fw-regular  text-decoration-none hover-color-green" >Campaign Builder</a>
+                               </li class="mb-2">
+                               <li class="mb-2">
+                                <a href="#" class="text-dark-c fs-16px fw-regular  text-decoration-none hover-color-green" >Campaign Bundles</a>
+                                </li class="mb-2">
+                                <li class="mb-2">
+                                    <a href="#" class="text-dark-c fs-16px fw-regular  text-decoration-none hover-color-green" >Custom Ad Solutions</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h4 class="footer-title">RESOURCES</h4>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2" >
+                                     <a href="#" class="text-dark-c fs-16px fw-regular  text-decoration-none hover-color-green"> F.A.Q</a>
+                                </li class="mb-2">
+                                <li class="mb-2">
+                                     <a href="#" class="text-dark-c fs-16px fw-regular  text-decoration-none hover-color-green " >Support </a>
+                                </li class="mb-2">
+                                <li class="mb-2">
+                                 <a href="#" class="text-dark-c fs-16px fw-regular  text-decoration-none hover-color-green" >Ad Spec Guidelines                                </a>
+                                 </li class="mb-2">
+                                 <li class="mb-2">
+                                     <a href="#" class="text-dark-c fs-16px fw-regular  text-decoration-none hover-color-green" >Server Status</a>
+                                 </li>
+                             </ul>
+                        </div>
+                       <div class="col-6 col-md-3">
+                            <h4 class="footer-title">LEGAL </h4>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2" >
+                                     <a href="#" class="text-dark-c fs-16px fw-regular  text-decoration-none hover-color-green"> Refund Policy</a>
+                                </li class="mb-2">
+                                <li class="mb-2">
+                                     <a href="#" class="text-dark-c fs-16px fw-regular  text-decoration-none hover-color-green " >Terms                                    </a>
+                                </li class="mb-2">
+                                <li class="mb-2">
+                                 <a href="#" class="text-dark-c fs-16px fw-regular  text-decoration-none hover-color-green" >Privacy
+                                </a>
+                                 </li class="mb-2">
+                                 <li class="mb-2">
+                                     <a href="#" class="text-dark-c fs-16px fw-regular  text-decoration-none hover-color-green" >Cookies</a>
+                                 </li>
+                             </ul>
+                        </div>
+                       <div class="col-6 col-md-3">
+                            <h4 class="footer-title">INFORMATION</h4>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2" >
+                                     <a href="#" class="text-dark-c fs-16px fw-regular  text-decoration-none hover-color-green"> About Use</a>
+                                </li class="mb-2">
+                                <li class="mb-2">
+                                     <a href="#" class="text-dark-c fs-16px fw-regular  text-decoration-none hover-color-green " >Contact Us
+                                    </a>
+                                </li class="mb-2">
+                                <li class="mb-2">
+                                 <a href="#" class="text-dark-c fs-16px fw-regular  text-decoration-none hover-color-green" >Affiliate Program
+                                </a>
+                                 </li class="mb-2">
+                                 <li class="mb-2">
+                                     <a href="#" class="text-dark-c fs-16px fw-regular  text-decoration-none hover-color-green" >Channel Partners</a>
+                                 </li>
+                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rights-row">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a class="footer-logo text-dark-c" href="#"><img src="assets/images/logo-footer.png" class="img-fluid"></a>
+                    </div>
+                    <div class="col-md-6 text-end fw-regular">
+                        ©All Rights Reserved 2024 Catapult Ads | Marketplace
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="assets/js/jquery.marquee.min.js" type="text/javascript"></script>
+    <script src='https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.js" integrity="sha512-zlWWyZq71UMApAjih4WkaRpikgY9Bz1oXIW5G0fED4vk14JjGlQ1UmkGM392jEULP8jbNMiwLWdM8Z87Hu88Fw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/custom.js" type="text/javascript"></script>
+  </body>
+</html>
